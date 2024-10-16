@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo Drag-Drop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="todo-container">
+      <form id="add-form">
+        <input type="text" placeholder="New TODO...." id="todo-input" />
+        <button type="submit" id="todo-btn">ADD+</button>
+      </form>
+
+      <div class="boxes-container">
+        <div class="box" id="to-do">
+          <h3 class="heading">TODO</h3>
+          <!-- البرجراف واخد خاصيه دراجبول وقيمته ترو عشان امسك العنصر يتحرك براحته بالموس -->
+          <p class="task" draggable="true">playing playstation</p>
+          <p class="task" draggable="true">playing football</p>
+          <p class="task" draggable="true">playing pubg</p>
+        </div>
+
+        <div class="box" id="doing">
+          <h3 class="heading">DOING</h3>
+
+          <p class="task" draggable="true">watching a movie</p>
+        </div>
+
+        <div class="box" id="done">
+          <h3 class="heading">DONE</h3>
+
+          <p class="task" draggable="true">stadying physics</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
